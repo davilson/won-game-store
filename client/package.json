@@ -10,11 +10,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"========================\""
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*": "yarn lint --fix"
+    "src/**/*": [
+      "yarn lint --fix"
+    ]
   },
   "dependencies": {
     "next": "10.0.6",
@@ -32,7 +34,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.5.4",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
