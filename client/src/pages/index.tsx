@@ -1,13 +1,5 @@
-type HomeProps = {
-  title: string
-}
+import Main from 'components/Main'
 
-export default function Home({ title = 'React' }: HomeProps) {
-  return (
-    <div>
-      <main>
-        <h1>{title}</h1>
-      </main>
-    </div>
-  )
+export default function Home() {
+  return <Main />
 }
